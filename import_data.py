@@ -26,10 +26,10 @@ def open_image_dir(dir, size, label = False):
     return image_array
 
 def import_images(size):
-    dir_images_train = "D:\\images\\Kronos Display Images\\images"
-    dir_labels_train = "D:\\images\\Kronos Display Images\\labels"
-    dir_images_test = "D:\\images\\Kronos Display Images\\images test"
-    dir_labels_test = "D:\\images\\Kronos Display Images\\labels test"
+    dir_images_train = "images/images"
+    dir_labels_train = "images//labels"
+    dir_images_test = "images/images test"
+    dir_labels_test = "images/labels test"
 
     train_images = open_image_dir(dir_images_train, size)
     train_labels = open_image_dir(dir_labels_train, size, label = True)
