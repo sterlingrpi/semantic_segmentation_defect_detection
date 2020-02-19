@@ -1,3 +1,6 @@
-# semantic_segmentation_defect_detection
+code for finding defects in images. Especially for machine vision applications in manufacturing. Labview application is used for labeling defects in images (i.e. a column of pixels that are out). However, a dataset of images are provided. The images come in pairs, one is the actual image the other is the label associated with the image. Semantic segmentation classifies the image pixel by pixel. Therefore, you not only get a pass or fail response for an image but also get the exact location of the failure. The iamge below illustrates the results from running the project. The images with a defect are shown in color. To the right is the prediction in black and white where a defect was detected. Black is the defect.
 
 ![Image description](https://github.com/sterlingrpi/semantic_segmentation_defect_detection/blob/master/images/example_of_results.png)
+
+
+Code is adapted from a project by mrgloom. Many changes to support working off of reall images that are loaded from file instead of  generated images from original project. Also data generator to manipulate the images to generalize the features, plotting multple images and results concurrently, and a tool for labeling defects in real images
