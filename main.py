@@ -41,5 +41,5 @@ def train():
 if __name__ == '__main__':
     train_images, train_labels, test_images, test_labels, image_shape = import_images(resize)
     visualy_inspect_generated_data(train_images, train_labels)
-#    train()
+    train()
     visualy_inspect_result(train_images, image_shape, INPUT_CHANNELS, NUMBER_OF_CLASSES, loss_name)
