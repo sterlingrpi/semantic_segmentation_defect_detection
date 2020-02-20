@@ -1,5 +1,7 @@
 import numpy
 
+#because the labels are images we need a special function 
+#to shuffle the iamges and their labels together
 def shuffle_in_unison(a, b):
     assert len(a) == len(b)
     shuffled_a = numpy.empty(a.shape, dtype=a.dtype)
